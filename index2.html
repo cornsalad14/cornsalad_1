@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics_2</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form method="get" action="index1.html">
+        <label for="username">Username</label>
+        <input name="username" type="text" id="username" placeholder="Enter your username" required > <br> <br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required > <br> <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your Email" required > <br> <br>
+        
+        <p>Select your gender</p>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" required><br>   <!-- if we want only one option to be -->
+        <label for="female">Female</label>                          <!-- selected then all should have same  -->
+        <input type="radio" name="gender" id="female" required><br>  <!-- ' name="somethin" ', and if we want -->
+        <label for="Other">Other</label>                             <!-- multiple options to be selected then -->
+        <input type="radio" name="gender" id="Other" required><br><br>  <!-- we can use different name tags -->
+
+        <label for="age group">Select your age group</label>
+        <select name="between_age_group_of" id="age group">
+            <option value="6-17">6-17</option>
+            <option value="18-30">18-30</option>
+            <option value="31-50">31-50</option>
+            <option value="50+">50+</option>
+        </select> <br>
+
+        <p>Tell us about yourself</p>
+        <textarea cols="30" rows="10" placeholder="type here (optional)"></textarea> <br><br>
+
+        <label for="color">Pick a color</label>
+        <input type="color" id="colour" required> <br><br>
+
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" required> <br><br>
+
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" required> <br><br>
+
+
+        <br><input type="submit" value="Sign in">
+        
+        
+    </form>     <!-- if required is not used then
+         without entering any data one can submit the form ,
+          hence 'required' is necessary -->
+
+</body>
+</html>

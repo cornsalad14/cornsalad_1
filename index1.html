@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic_1</title>
+    <style>
+        #para1{
+             color: brown;  /*part of css */
+        }
+        #water{
+            color: aqua;
+        }
+        #sixteen{
+            color: crimson;
+        }
+        .col{
+            color: violet;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- basic codes for html -->
+
+    <img src = "/Users/riddhilahare/Downloads/Basic html codes.jpeg" 
+    widht = "400" alt = "basic codes for html" >
+    <!-- image -->
+    <img src = "./im1.jpeg" width = "500" alt = "Stunning Song Joong Ki"> 
+        <!-- this is how 
+        u insert an image in a website, 'src' is for the path of the image 
+        while 'alt' is for the description of the image
+        'width = "  "' is for setting the width of img/line' 
+        'height = "  "' is for setting the height of img/line' -->
+
+
+
+
+    <!-- link -->
+
+    <p id="para1">Click&nbsp;here to go to     <a href = "https://google.co.in"
+         target = "_blank" title = "Google is one of the most used search engine"> 
+         Google</a></p>
+         <!-- 'p' stands for the paragraph,
+         '&nbsp;' stands for non-breaking space,
+         '<a href' is used to insert the required link, 
+         '<br> is used to go to the next line,
+         'target = "_blank"' is used to go to the next tab,
+         'title = ....' this is used when we want to show any tag 
+         or statement as we hower the curser over the link' -->
+
+
+
+
+    <!-- list -->
+
+    <ol>  <!-- 'ol' stands for ordered list -->
+        <li>Item 1</li>
+        <li>Item 2</li>    
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>    
+      <!-- default numbering is like 1. ....
+                                     2. ....
+                                     3. ..... -->
+    <ol type = 'a'>
+        <li>Item 1</li>
+        <li>Item 2</li>    
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol> 
+        <!-- here numbering will be like a. ....
+                                         b. ....
+                                         c. ....
+             similarly we can have type = 'A', type = 'i', type = 'I'-->   
+    <ul>  <!-- 'ul' stands for unordered list -->
+        <li>Item 1</li>
+        <li>Item 2</li>    
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>    
+    <ul  style = 'list-style-type: none;' >
+        <li>Item 1</li>
+        <li>Item 2</li>    
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>    
+        <!-- style = list-style-type is a css code used 
+            to use the bullets of the list as required,
+            few other types are disc,circle,etc. -->
+
+    <dl>    <!-- descriotion list -->
+        <dt>IIT</dt>
+        <dd><u>stands</u> for <b><mark>Indian Institute of Technology</mark></b></dd>  
+        <dt>NIT</dt>
+        <dd><strike>stands</strike> for <i>National Institute of Technology</i> </dd>  
+    </dl>   
+            <!--<b> or <strong> tag is used for bold letters, 
+                <i> or <em> tag is used for itallic letters,
+                <mark> tag is used to highlight the words, 
+                <u> tag is used to underline the words,
+                <strike> tag is used to strike (cut) the words --> 
+    <p id="water">H<sub>2</sub>O</p>  <!-- sub tag's used for writig at a lower level-->
+    <p id="sixteen">2<sup>4</sup></p>   <!-- sup tag's used for writig at a higher level-->   
+    
+
+
+
+    <!-- Table -->
+
+    <table border = "1">
+        <thead>         <!-- table head -->
+            <tr>            <!-- Table row -->
+                <th class="col">SEM I</th>           <!-- table head -->
+                <th class="col">SEM II</th>
+            </tr>
+        </thead>
+        <tbody>          <!-- table body -->
+           <tr>
+                <td>Enginering Mathematics I</td>   <!-- table description -->
+                <td>Enginering Mathematics II</td>
+           </tr>
+           <tr>
+                <td>Enginering Physics</td>
+                <td>Enginering Chemistry</td>
+           </tr>
+           <tr>
+                <td>Systems in Mechanical Engineering</td>
+                <td>Programming and Problem Solving</td>
+           </tr>
+           <tr>
+                <td>Basic Electrical Enginering</td>
+                <td>Basic Electronics Enginering</td>
+           </tr>
+           <tr>
+                <td>Enginering Mechanics </td>
+                <td>Programming and Problem Solving</td>
+           </tr>
+        </tbody>
+    </table>
+</body>
+</html>
